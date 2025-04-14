@@ -1,5 +1,5 @@
-import type { Config } from "tailwindcss";
-import { fontFamily } from "tailwindcss/defaultTheme";
+import type { Config } from 'tailwindcss';
+import { fontFamily } from 'tailwindcss/defaultTheme';
 
 const config: Config = {
     content: [
@@ -30,6 +30,12 @@ const config: Config = {
             ring: "hsl(var(--color-ring) / <alpha-value>)",
             "chart-1": "hsl(var(--color-chart-1) / <alpha-value>)",
             skeleton: "hsl(var(--color-skeleton) / <alpha-value>)",
+            green: {
+                500: "#22c55e"
+            },
+            yellow: {
+                500: "#eab308"
+            }
         },
         fontFamily: {
             body: ["var(--font-inter)", ...fontFamily.sans],
@@ -44,6 +50,51 @@ const config: Config = {
             backgroundImage: {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
                 "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+            },
+            keyframes: {
+                fadeIn: {
+                    '0%': { opacity: '0' },
+                    '100%': { opacity: '1' },
+                },
+                slideUp: {
+                    '0%': { transform: 'translateY(1rem)', opacity: '0' },
+                    '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideDown: {
+                    '0%': { transform: 'translateY(-1rem)', opacity: '0' },
+                    '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideLeft: {
+                    '0%': { transform: 'translateX(1rem)', opacity: '0' },
+                    '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                slideRight: {
+                    '0%': { transform: 'translateX(-1rem)', opacity: '0' },
+                    '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                ripple: {
+                    '0%': { transform: 'scale(0.8)', opacity: '1' },
+                    '50%': { transform: 'scale(1.05)', opacity: '0.8' },
+                    '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                pulse: {
+                    '0%, 100%': { opacity: '1' },
+                    '50%': { opacity: '0.5' },
+                },
+                shimmer: {
+                    '0%': { backgroundPosition: '-1000px 0' },
+                    '100%': { backgroundPosition: '1000px 0' },
+                },
+            },
+            animation: {
+                fadeIn: 'fadeIn 0.5s ease-in-out forwards',
+                slideUp: 'slideUp 0.5s ease-in-out forwards',
+                slideDown: 'slideDown 0.5s ease-in-out forwards',
+                slideLeft: 'slideLeft 0.5s ease-in-out forwards',
+                slideRight: 'slideRight 0.5s ease-in-out forwards',
+                ripple: 'ripple 0.3s ease-in-out',
+                pulse: 'pulse 0.5s ease-in-out',
+                shimmer: 'shimmer 2s infinite linear',
             },
         },
     },

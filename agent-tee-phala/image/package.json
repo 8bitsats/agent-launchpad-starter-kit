@@ -41,6 +41,12 @@
   "pnpm": {
     "patchedDependencies": {
       "@elizaos/core@0.25.6-alpha.1": "patches/@elizaos__core@0.25.6-alpha.1.patch"
-    }
+    },
+    "onlyBuiltDependencies": [
+      "bigint-buffer",
+      "bufferutil",
+      "sharp",
+      "utf-8-validate"
+    ]
   }
 }

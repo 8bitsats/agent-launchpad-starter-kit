@@ -5,6 +5,7 @@
     "scripts": {
         "build": "next build",
         "dev": "docker pull phalanetwork/tappd-simulator:latest && next dev -p 3001 && echo '\n🚀 Please make sure OrbStack is running before continuing...\n'",
+        "dev:alt": "npx next dev -p 3002",
         "lint": "next lint",
         "lint:fix": "biome check --write",
         "start": "next start"

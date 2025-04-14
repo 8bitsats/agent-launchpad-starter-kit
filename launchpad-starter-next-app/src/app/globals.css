@@ -4,28 +4,28 @@
 
 @layer base {
     :root {
-        /* Define color variables */
-        --color-background: 104 52% 95%; /* #eff9ec */
-        --color-foreground: 210 14.3% 4.1%; /* #2d2d2d */
-        --color-card: 0 0% 100%; /* #ffffff */
-        --color-card-foreground: 210 14.3% 4.1%; /* #2d2d2d */
-        --color-popover: 0 0% 100%; /* #ffffff */
-        --color-popover-foreground: 210 14.3% 4.1%; /* #2d2d2d */
-        --color-primary: 210 95% 53.1%; /* #0066ff */
-        --color-primary-foreground: 210 30% 62%; /* #82A6BC */
-        --color-secondary: 210 4.8% 95.9%; /* #f2f2f2 */
-        --color-secondary-foreground: 210 56% 24%; /* #1B3960 */
-        --color-muted: 210 18% 74%; /* #B1BCC9 */
-        --color-muted-foreground: 210 77% 29%; /* #114983 */
-        --color-accent: 210 4.8% 95.9%; /* #f2f2f2 */
-        --color-accent-foreground: 210 9.8% 10%; /* #3d3d3d */
-        --color-destructive: 0 84.2% 60.2%; /* #ff3333 */
-        --color-destructive-foreground: 210 9.1% 97.8%; /* #f5f5f5 */
-        --color-border: 210 26% 80%; /* #C0CBD9 */
-        --color-input: 210 5.9% 90%; /* #e6e6e6 */
-        --color-ring: 210 95% 53.1%; /* #0066ff */
-        --color-chart-1: 210 76% 61%; /* #47A2FF */
-        --color-skeleton: 210 33% 88%; /* #D7E2EB */
+        /* Define color variables - Dark Theme */
+        --color-background: 220 20% 12%; /* #161b24 - Dark blue-gray background */
+        --color-foreground: 210 20% 98%; /* #f5f7fa - Light text for dark background */
+        --color-card: 220 16% 18%; /* #232a36 - Slightly lighter than background */
+        --color-card-foreground: 210 20% 98%; /* #f5f7fa - Light text for dark cards */
+        --color-popover: 220 16% 18%; /* #232a36 - Same as card */
+        --color-popover-foreground: 210 20% 98%; /* #f5f7fa - Light text for popovers */
+        --color-primary: 210 100% 60%; /* #1a8cff - Vibrant blue */
+        --color-primary-foreground: 210 20% 98%; /* #f5f7fa - Light text on primary */
+        --color-secondary: 220 10% 22%; /* #323642 - Slightly lighter than card */
+        --color-secondary-foreground: 210 20% 90%; /* #e1e7f0 - Slightly dimmed text */
+        --color-muted: 220 10% 40%; /* #5c6273 - Muted color for less important elements */
+        --color-muted-foreground: 210 15% 80%; /* #c4d0e0 - Muted text */
+        --color-accent: 250 70% 65%; /* #9f7efa - Purple accent */
+        --color-accent-foreground: 210 20% 98%; /* #f5f7fa - Light text on accent */
+        --color-destructive: 0 84% 60%; /* #ff3333 - Red for destructive actions */
+        --color-destructive-foreground: 210 20% 98%; /* #f5f7fa - Light text on destructive */
+        --color-border: 220 15% 25%; /* #2d3545 - Dark border */
+        --color-input: 220 12% 20%; /* #282e3b - Input background */
+        --color-ring: 210 100% 60%; /* #1a8cff - Same as primary */
+        --color-chart-1: 210 80% 60%; /* #47a2ff - Chart color */
+        --color-skeleton: 220 15% 25%; /* #2d3545 - Skeleton loader color */
 
         /* Use color variables */
         --background: var(--color-background);
@@ -47,9 +47,9 @@
         --border: var(--color-border);
         --input: var(--color-input);
         --ring: var(--color-ring);
-        --shadow-light: 0 1px 2px 0 rgba(193, 208, 234, 0.6);
-        --shadow-heavy: 0 4px 8px 0 rgba(193, 208, 234, 0.6);
-        --shadow-dropdown: 0 2px 12px 0 rgba(193, 208, 234, 0.6);
+        --shadow-light: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+        --shadow-heavy: 0 6px 12px 0 rgba(0, 0, 0, 0.4);
+        --shadow-dropdown: 0 4px 16px 0 rgba(0, 0, 0, 0.5);
         --chart-1: var(--color-chart-1);
         --radius: 0.5rem;
     }
