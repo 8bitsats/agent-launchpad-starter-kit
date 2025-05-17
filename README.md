@@ -176,7 +176,7 @@ For an exhaustive list of supported chains on Crossmint, please refer to the [Su
 > 2. Create a new project and copy the API key
 > 3. Set the `ALCHEMY_API_KEY` environment variable in your `.env` file:
 >    ```
->    ALCHEMY_API_KEY=your_api_key
+>    ALCHEMY_API_KEY=NTPk12UjSBSKMe-fLwN9iwJ6st8OMj62
 
 #### Solana Smart Wallets
 
